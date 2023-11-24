@@ -1,8 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
 
-Vue.config.productionTip = false
+import App from './App.vue';
+// import ActiveElement from './components/ActiveElement.vue';
+// import KnowledgeBase from './components/KnowledgeBase.vue';
+// import KnowledgeElement from './components/KnowledgeElement.vue';
+// import KnowledgeGrid from './components/KnowledgeGrid.vue';
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+createApp(App).mount("#app");
+
+// app.component('active-element', ActiveElement);
+// app.component('knowledge-base', KnowledgeBase);
+// app.component('knowledge-element', KnowledgeElement);
+// app.component('knowledge-grid', KnowledgeGrid);
+
+// app.mount('#app');
